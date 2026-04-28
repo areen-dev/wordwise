@@ -3,6 +3,9 @@ def count_words(text):
     word_list = text.split()
     word_dict = {}
     for word in word_list:
-        count = word_list.count(word)
-        word_dict.setdefault(word, count)
+        if word in word_dict:
+            word_dict[word] += 1
+        else:
+            word_dict[word] = 1
+
     return word_dict
