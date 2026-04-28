@@ -9,3 +9,11 @@ def count_words(text):
             word_dict[word] = 1
 
     return word_dict
+
+
+def search_word(word_dict, word):
+    """function which searches for a word in word_dict dictionary"""
+    if word in word_dict:
+        return f"{word} found --- {word_dict[word]} times"
+    else:
+        return f"{word} not found"
