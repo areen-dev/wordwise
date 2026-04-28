@@ -17,3 +17,13 @@ def search_word(word_dict, word):
         return f"{word} found --- {word_dict[word]} times"
     else:
         return f"{word} not found"
+
+
+def find_missing_words(word_dict, target_words):
+    """function which shows which words are missing in the word_dict dictionary"""
+    missing_words_list = []
+    for words in target_words:
+        if words not in word_dict:
+            missing_words_list.append(words)
+
+    return missing_words_list
