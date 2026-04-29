@@ -16,7 +16,7 @@ def search_word(word_dict, word):
     if word in word_dict:
         return f"{word} found --- {word_dict[word]} times"
     else:
-        return f"{word} not found"
+        return f"{word} not found!"
 
 
 def find_missing_words(word_dict, target_words):
